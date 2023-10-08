@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Profile Page</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://kenwheeler.github.io/slick/slick/slick.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+      </head>
+    <body>
+        <div class="bg-black">
+            <div class="position-sticky top-0 w-100 z-1000 py-4 px-4">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid px-4">
+                    <a class="navbar-brand d-flex align-items-center" href="#"><img
+                        src="https://static.wixstatic.com/media/15d08d_019775780366452694dc8349fa738f4c~mv2.png/v1/fill/w_94,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Latest%20Round%2001.png"
+                        alt=""
+                        />
+                        <div class="logo ps-3">
+                        <span class="logo_heading d-block">3D CANVAS</span><span class="logo_desc d-block fs-6">Providing 3d Render's Since 2013</span>
+                        </div></a><button
+                        class="navbar-toggler collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-4 pt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modal-page.html">Modal Pages</a>
+                        </li>
+                        </ul>
+                        <div class="right_btn ps-lg-4 pb-4 pb-lg-0">
+                        <button
+                            type="button"
+                            class="border-0 bg-transparent text-white px-0">
+                            <span><svg
+                                data-bbox="0 0 50 50"
+                                data-type="shape"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 50 50"
+                                fill="#fff">
+                                <g>
+                                <path
+                                    d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"></path>
+                                </g></svg></span><span>Log in</span>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="profile_page pb-3">
+                <div class="container">
+                    <div class="user_details py-3">
+                        <div class="row align-items-center">
+                            <div class="col-4 col-md-3">
+                                <div class="user_img bg_midnight rounded-circle position-relative mx-sm-auto">
+                                    <input type="file" name="user_img" id="user_img">
+                                    <label for="user_img" class="position-absolute top-0 start-0 end-0 d-flex align-items-center justify-content-center w-100 h-100">Upload Img</label>
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-9">
+                                <div class="user_data">
+                                    <div class="border border-1 border-secondary rounded-2 p-1 my-2"><input type="text" class="d-block bg-transparent border-0 user_profile_name" value="Meet Sardhara"></div>
+                                    <div class="border border-1 border-secondary rounded-2 p-1 my-2"><input type="email" class="d-block bg-transparent border-0 user_profile_email text-secondary" value="meetsardhara@gmail.com"></div>
+                                    <div class="border border-1 border-secondary rounded-2 p-1 my-2"><input type="tel" class="d-block bg-transparent border-0 user_profile_phonenumber text-secondary" value="+91 98765432198"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user_profile">
+                        <form class="row">
+                            <div class="col-md-6 mt-3">
+                                <div class="border border-2 rounded-4 p-3">
+                                    <input type="text" id="user_name" class="profile_name w-100 border-0 d-block bg_midnight py-2 px-3 rounded-2" value="Meet Shardhara">
+                                    <label for="user_name" class="profile_data d-block py-2 px-3">User Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="border border-2 rounded-4 p-3">
+                                    <input type="email" id="user_email" class="profile_name w-100 border-0 d-block bg_midnight py-2 px-3 rounded-2" value="meetshardhara@123.com">
+                                    <label for="user_email" class="profile_data d-block py-2 px-3">User Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="border border-2 rounded-4 p-3">
+                                    <input type="tel" id="telephone" class="profile_name w-100 border-0 d-block bg_midnight py-2 px-3 rounded-2" value="+91 98765432198">
+                                    <label for="telephone" class="profile_data d-block py-2 px-3">User Phone NUmber</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="border border-2 rounded-4 p-3">
+                                    <input type="password" id="user_password" class="profile_name w-100 border-0 d-block bg_midnight py-2 px-3 rounded-2" value="Meet Shardhara">
+                                    <label for="user_password" class="profile_data d-block py-2 px-3">User Password</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3 mx-auto">
+                                <div class="row">
+                                    <div class="col-6 p-3">
+                                        <button type="button" class="btn btn-dark w-100">Edit</button>
+                                    </div>
+                                    <div class="col-6 p-3">
+                                        <button type="button" class="btn btn-dark w-100">save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer bg_dark_color py-5">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm-6 col-lg-3 my-auto order-first px-2">
+                        <a
+                        class="navbar-brand d-flex align-items-center justify-content-center"
+                        href="#"><img
+                            src="https://static.wixstatic.com/media/15d08d_019775780366452694dc8349fa738f4c~mv2.png/v1/fill/w_94,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Latest%20Round%2001.png"
+                            alt=""
+                        />
+                        <div class="logo ps-3">
+                            <span class="text-white logo_heading d-block">3D CANVAS</span><span class="text-white logo_desc d-block fs-6">Providing 3d Render's Since 2013</span>
+                        </div></a>
+                    </div>
+                    <div
+                        class="col-sm-4 col-lg-2 px-2 order-last lg-order-0 mt-3 mt-lg-0">
+                        <div class="text-center">
+                        <h5 class="text-white fw-bold">Menu</h5>
+                        <ul class="list-unstyled py-3">
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Home</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Generate</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Support</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Upgrade</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Contact</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-4 col-lg-2 px-2 order-last lg-order-0 mt-3 mt-lg-0">
+                        <div class="text-center">
+                        <h5 class="text-white fw-bold">Redesign :</h5>
+                        <ul class="list-unstyled py-3">
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Interios</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Exterios</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Garden</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Patios</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Terraces</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-sm-4 col-lg-2 px-2 order-last lg-order-0 mt-3 mt-lg-0">
+                        <div class="text-center">
+                        <h5 class="text-white fw-bold">Legal</h5>
+                        <ul class="list-unstyled py-3">
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Terms Of Service</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Privacy Policy</a>
+                            </li>
+                            <li class="d-block">
+                            <a
+                                href="javascript.void()"
+                                class="d-block text_light_white py-1">Refund Policy</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 order-2 order-lg-last mt-4 mt-sm-0">
+                        <div class="contact_us">
+                        <h5 class="text-white fw-bold text-center text-lg-start">
+                            Contact With Us
+                        </h5>
+                        <ul
+                            class="d-flex align-items-center justify-content-center justify-content-lg-start list-unstyled py-3">
+                            <li class="icon_link">
+                            <a href="javascript.void()" class="d-block py-1"><span><i
+                                    class="fa fa-facebook text_light_white"
+                                    aria-hidden="true"></i></span></a>
+                            </li>
+                            <li class="icon_link">
+                            <a href="javascript.void()" class="d-block py-1"><span><i
+                                    class="fa fa-twitter text_light_white"
+                                    aria-hidden="true"></i></span></a>
+                            </li>
+                            <li class="icon_link">
+                            <a href="javascript.void()" class="d-block py-1"><span><i
+                                    class="fa fa-linkedin text_light_white"
+                                    aria-hidden="true"></i></span></a>
+                            </li>
+                            <li class="icon_link">
+                            <a href="javascript.void()" class="d-block py-1"><span><i
+                                    class="fa fa-instagram text_light_white"
+                                    aria-hidden="true"></i></span></a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script
+        type="text/javascript"
+        src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>
